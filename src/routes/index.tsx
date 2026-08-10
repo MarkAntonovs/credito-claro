@@ -287,7 +287,7 @@ function Home() {
         </Section>
 
         {/* RESPONSIBLE BORROWING */}
-        <Section labelledBy={undefined}>
+        <Section>
           <ResponsibleBorrowingNotice />
         </Section>
 
