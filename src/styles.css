@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * ColombiaCredito.co design system
+ * CreditoColombia.co design system
  *
  * Editorial-financial: warm paper surfaces, deep ink navy text,
  * one restrained emerald accent. All colors in oklch.
@@ -20,8 +20,8 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -209,4 +209,68 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+@layer components {
+  .legacy-article-content {
+    color: var(--color-muted-foreground);
+    font-size: 0.975rem;
+    line-height: 1.75;
+  }
+
+  .legacy-article-content section + section {
+    border-top: 1px solid var(--color-border);
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .legacy-article-content h2 {
+    color: var(--color-foreground);
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .legacy-article-content h3 {
+    color: var(--color-foreground);
+    font-size: 1.125rem;
+    line-height: 1.35;
+    margin-top: 1.5rem;
+  }
+
+  .legacy-article-content p,
+  .legacy-article-content ul,
+  .legacy-article-content ol,
+  .legacy-article-content details {
+    margin-top: 0.75rem;
+  }
+
+  .legacy-article-content ul,
+  .legacy-article-content ol {
+    padding-left: 1.25rem;
+  }
+
+  .legacy-article-content ul {
+    list-style: disc;
+  }
+
+  .legacy-article-content ol {
+    list-style: decimal;
+  }
+
+  .legacy-article-content li + li {
+    margin-top: 0.375rem;
+  }
+
+  .legacy-article-content a {
+    color: var(--color-foreground);
+    text-decoration-color: var(--color-accent);
+    text-decoration-line: underline;
+    text-underline-offset: 0.25rem;
+  }
+
+  .legacy-article-content summary {
+    color: var(--color-foreground);
+    cursor: pointer;
+    font-weight: 500;
+  }
 }

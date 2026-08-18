@@ -1,25 +1,27 @@
+import type { ProviderType } from "@/types/provider";
 import { cn } from "@/lib/utils";
-import type { ProviderType } from "@/data/sample-providers";
 
 const LABELS: Record<ProviderType, string> = {
-  directo: "Proveedor directo",
-  comparacion: "Servicio de comparación",
+  direct_credit_provider: "Proveedor directo",
+  credit_service: "Servicio de crédito",
+  broker: "Intermediario",
+  aggregator: "Servicio de comparación",
+  lead_generator: "Servicio de contacto",
 };
 
-export function ProviderTypeBadge({
-  type,
-  className,
-}: {
-  type: ProviderType;
-  className?: string;
-}) {
+export function ProviderTypeBadge({ type, className }: { type: ProviderType; className?: string }) {
+  const isDirect = type === "direct_credit_provider";
+  const isNeutral = type === "credit_service";
+
   return (
     <span
       className={cn(
         "inline-flex items-center gap-1.5 rounded-sm border px-2 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.08em]",
-        type === "directo"
+        isDirect
           ? "border-accent-soft-foreground/25 bg-accent-soft text-accent-soft-foreground"
-          : "border-notice-border bg-notice text-notice-foreground",
+          : isNeutral
+            ? "border-border-strong bg-surface text-foreground"
+            : "border-notice-border bg-notice text-notice-foreground",
         className,
       )}
     >
@@ -27,7 +29,7 @@ export function ProviderTypeBadge({
         aria-hidden="true"
         className={cn(
           "size-1.5 rounded-full",
-          type === "directo" ? "bg-accent" : "bg-notice-foreground",
+          isDirect ? "bg-accent" : isNeutral ? "bg-muted-foreground" : "bg-notice-foreground",
         )}
       />
       {LABELS[type]}

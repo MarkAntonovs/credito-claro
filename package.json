@@ -9,7 +9,10 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test:calculator": "bun test src/lib/loan-calculator.test.mjs",
+    "generate:seo-routes": "bun scripts/generate-seo-routes.mjs",
+    "validate:seo": "bun scripts/validate-seo.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

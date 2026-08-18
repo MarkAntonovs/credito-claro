@@ -1,4 +1,5 @@
 import { Info } from "lucide-react";
+import { publicRoutes } from "@/config/routes";
 
 export function AffiliateDisclosure({ compact = false }: { compact?: boolean }) {
   return (
@@ -10,15 +11,23 @@ export function AffiliateDisclosure({ compact = false }: { compact?: boolean }) 
       <div className="min-w-0">
         {!compact ? <p className="text-sm font-semibold">Divulgación comercial</p> : null}
         <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-          Algunos enlaces son de afiliados. Podemos recibir una comisión si solicitas un producto a
-          través de ellos. Esto no aumenta el costo para ti ni condiciona la información que
-          publicamos.{" "}
+          Algunos enlaces son de afiliados. CreditoColombia.co puede recibir una comisión si
+          utilizas uno de estos enlaces. Las condiciones finales dependen del proveedor
+          correspondiente.{" "}
           <a
-            href="#metodologia"
+            href={publicRoutes.trust.affiliateDisclosure.path}
             className="font-medium text-foreground underline decoration-accent underline-offset-4"
           >
-            Cómo funciona nuestra metodología
+            Consulta la divulgación de afiliados
           </a>
+          {" y "}
+          <a
+            href={publicRoutes.trust.methodology.path}
+            className="font-medium text-foreground underline decoration-accent underline-offset-4"
+          >
+            nuestra metodología
+          </a>
+          .
         </p>
       </div>
     </aside>

@@ -1,6 +1,6 @@
-# ColombiaCredito.co — Homepage prototype + design system
+# CreditoColombia.co — Homepage prototype + design system
 
-Scope for this stage: one polished homepage at `/` plus the reusable visual system behind it. No migration, no extra pages, no real financial data.
+Original scope for this stage: one polished homepage at `/` plus the reusable visual system behind it. No migration, no extra pages, no real financial data.
 
 ## 1. Visual direction
 

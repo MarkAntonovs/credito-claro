@@ -1,65 +1,57 @@
 /**
  * SAMPLE / PLACEHOLDER DATA — design prototype only.
  *
- * No real rates, amounts, terms or verification dates. Every value below is a
- * placeholder used to demonstrate the ProviderCard layout. Real data will be
- * sourced and verified before any of this ships publicly.
+ * These records exercise the production-oriented Provider V1 shape without
+ * representing real companies, products, eligibility rules, rates, or claims.
  */
 
-export type ProviderType = "directo" | "comparacion";
-
-export type ProviderField = string | null;
-
-export interface Provider {
-  id: string;
-  name: string;
-  /** Two-letter monogram used instead of a real logo in the prototype. */
-  monogram: string;
-  type: ProviderType;
-  product: ProviderField;
-  amount: ProviderField;
-  term: ProviderField;
-  requirements: ProviderField[];
-  cost: ProviderField;
-  /** ISO date of last review, or null when unknown. */
-  lastReviewed: string | null;
-}
+import type { Provider } from "@/types/provider";
 
 export const SAMPLE_PROVIDERS: Provider[] = [
   {
-    id: "proveedor-a",
-    name: "Proveedor A",
-    monogram: "PA",
-    type: "directo",
-    product: "Cupo de crédito rotativo",
-    amount: "[monto de ejemplo]",
-    term: "[plazo de ejemplo]",
-    requirements: ["[requisito de ejemplo]", "[requisito de ejemplo]", "[requisito de ejemplo]"],
-    cost: "[tasa y costos por verificar]",
-    lastReviewed: null,
+    id: "sample-provider-a",
+    slug: "sample-provider-a",
+    name: "Proveedor de muestra A",
+    providerType: "direct_credit_provider",
+    productType: "[tipo de producto de muestra]",
+    currency: "COP",
+    eligibilityNotes: "[requisitos de muestra por verificar]",
+    termNotes: "[plazo de muestra por verificar]",
+    rateText: "[tasa de muestra por verificar]",
+    additionalCostsText: "[costos de muestra por verificar]",
+    superfinancieraStatus: "unknown",
+    officialSources: [],
+    claimProvenance: [],
+    featured: true,
+    active: false,
   },
   {
-    id: "servicio-b",
-    name: "Servicio B",
-    monogram: "SB",
-    type: "comparacion",
-    product: "Formulario único para varios proveedores",
-    amount: "[rango de ejemplo según proveedor]",
-    term: "[definido por cada proveedor]",
-    requirements: ["[requisito de ejemplo]", "[requisito de ejemplo]"],
-    cost: null,
-    lastReviewed: null,
+    id: "sample-service-b",
+    slug: "sample-service-b",
+    name: "Servicio de muestra B",
+    providerType: "aggregator",
+    productType: "[servicio de comparación de muestra]",
+    currency: "COP",
+    eligibilityNotes: "[criterios definidos por cada proveedor]",
+    termNotes: "[condiciones definidas por cada proveedor]",
+    superfinancieraStatus: "not_applicable",
+    officialSources: [],
+    claimProvenance: [],
+    featured: true,
+    active: false,
   },
   {
-    id: "proveedor-c",
-    name: "Proveedor C",
-    monogram: "PC",
-    type: "directo",
-    product: "Crédito de libre inversión",
-    amount: "[monto de ejemplo]",
-    term: null,
-    requirements: ["[requisito de ejemplo]", "[requisito de ejemplo]"],
-    cost: "[tasa de ejemplo]",
-    lastReviewed: null,
+    id: "sample-provider-c",
+    slug: "sample-provider-c",
+    name: "Proveedor de muestra C",
+    providerType: "direct_credit_provider",
+    productType: "[tipo de producto de muestra]",
+    currency: "COP",
+    eligibilityNotes: "[requisitos de muestra por verificar]",
+    superfinancieraStatus: "unknown",
+    officialSources: [],
+    claimProvenance: [],
+    featured: false,
+    active: false,
   },
 ];

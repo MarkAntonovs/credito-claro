@@ -10,33 +10,985 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AcuerdoPagoDeudaColombiaDothtmlRouteImport } from './routes/acuerdo-pago-deuda-colombia[.]html'
+import { Route as AlternativasPrestamosOnlineDothtmlRouteImport } from './routes/alternativas-prestamos-online[.]html'
+import { Route as AppsPrestamosColombiaDothtmlRouteImport } from './routes/apps-prestamos-colombia[.]html'
+import { Route as CompraDeCarteraColombiaDothtmlRouteImport } from './routes/compra-de-cartera-colombia[.]html'
+import { Route as ConsultarHistorialCrediticioGratisDothtmlRouteImport } from './routes/consultar-historial-crediticio-gratis[.]html'
+import { Route as ContactoDothtmlRouteImport } from './routes/contacto[.]html'
+import { Route as CostosOcultosCreditosOnlineDothtmlRouteImport } from './routes/costos-ocultos-creditos-online[.]html'
+import { Route as CreditoLibranzaColombiaDothtmlRouteImport } from './routes/credito-libranza-colombia[.]html'
+import { Route as CreditoLibreInversionColombiaDothtmlRouteImport } from './routes/credito-libre-inversion-colombia[.]html'
+import { Route as CreditoOnlineVsBancoDothtmlRouteImport } from './routes/credito-online-vs-banco[.]html'
+import { Route as CreditoPensionadosMalHistorialColombiaDothtmlRouteImport } from './routes/credito-pensionados-mal-historial-colombia[.]html'
+import { Route as CreditoSinCuentaBancariaColombiaDothtmlRouteImport } from './routes/credito-sin-cuenta-bancaria-colombia[.]html'
+import { Route as CreditoSinHistorialCrediticioDothtmlRouteImport } from './routes/credito-sin-historial-crediticio[.]html'
+import { Route as CreditosOnlineColombiaDothtmlRouteImport } from './routes/creditos-online-colombia[.]html'
+import { Route as CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRouteImport } from './routes/cuanto-credito-puede-pedir-un-pensionado-colombia[.]html'
+import { Route as DerechosConsumidorFinancieroColombiaDothtmlRouteImport } from './routes/derechos-consumidor-financiero-colombia[.]html'
+import { Route as DescuentoAutomaticoPensionadosColombiaDothtmlRouteImport } from './routes/descuento-automatico-pensionados-colombia[.]html'
+import { Route as EmbargoPorDeudasColombiaDothtmlRouteImport } from './routes/embargo-por-deudas-colombia[.]html'
+import { Route as EstafasPrestamosOnlineColombiaDothtmlRouteImport } from './routes/estafas-prestamos-online-colombia[.]html'
+import { Route as EstudioDeCreditoColombiaDothtmlRouteImport } from './routes/estudio-de-credito-colombia[.]html'
+import { Route as GotaAGotaColombiaDothtmlRouteImport } from './routes/gota-a-gota-colombia[.]html'
+import { Route as HistorialCrediticioDatacreditoColombiaDothtmlRouteImport } from './routes/historial-crediticio-datacredito-colombia[.]html'
+import { Route as InsolvenciaPersonaNaturalColombiaDothtmlRouteImport } from './routes/insolvencia-persona-natural-colombia[.]html'
+import { Route as MapaSitioDothtmlRouteImport } from './routes/mapa-sitio[.]html'
+import { Route as MicrocreditosColombiaDothtmlRouteImport } from './routes/microcreditos-colombia[.]html'
+import { Route as NoPuedoPagarPrestamoQueHacerDothtmlRouteImport } from './routes/no-puedo-pagar-prestamo-que-hacer[.]html'
+import { Route as OfertasCreditosDothtmlRouteImport } from './routes/ofertas-creditos[.]html'
+import { Route as PeligrosGotaGotaColombiaDothtmlRouteImport } from './routes/peligros-gota-gota-colombia[.]html'
+import { Route as PoliticaPrivacidadDothtmlRouteImport } from './routes/politica-privacidad[.]html'
+import { Route as PrestamoReportadoDatacreditoDothtmlRouteImport } from './routes/prestamo-reportado-datacredito[.]html'
+import { Route as PrestamoSoloConCedulaColombiaDothtmlRouteImport } from './routes/prestamo-solo-con-cedula-colombia[.]html'
+import { Route as PrestamosBajoMontoColombiaDothtmlRouteImport } from './routes/prestamos-bajo-monto-colombia[.]html'
+import { Route as PrestamosInmediatosEnLineaDothtmlRouteImport } from './routes/prestamos-inmediatos-en-linea[.]html'
+import { Route as PrestamosParaIndependientesColombiaDothtmlRouteImport } from './routes/prestamos-para-independientes-colombia[.]html'
+import { Route as PrestamosParaPensionadosColombiaRouteImport } from './routes/prestamos-para-pensionados-colombia'
+import { Route as PrestamosParaPensionadosColombiaDothtmlRouteImport } from './routes/prestamos-para-pensionados-colombia[.]html'
+import { Route as PrestamosPequenosMontosColombiaDothtmlRouteImport } from './routes/prestamos-pequenos-montos-colombia[.]html'
+import { Route as PrestamosRapidosInmediatosColombiaDothtmlRouteImport } from './routes/prestamos-rapidos-inmediatos-colombia[.]html'
+import { Route as PrestamosSinCodeudorColombiaDothtmlRouteImport } from './routes/prestamos-sin-codeudor-colombia[.]html'
+import { Route as PuntajeCrediticioColombiaDothtmlRouteImport } from './routes/puntaje-crediticio-colombia[.]html'
+import { Route as QueEsEstudioDeCreditoDothtmlRouteImport } from './routes/que-es-estudio-de-credito[.]html'
+import { Route as RefinanciarReestructurarDeudaDothtmlRouteImport } from './routes/refinanciar-reestructurar-deuda[.]html'
+import { Route as RequisitosCreditoOnlineColombiaDothtmlRouteImport } from './routes/requisitos-credito-online-colombia[.]html'
+import { Route as RequisitosCreditoParaPensionadosColombiaDothtmlRouteImport } from './routes/requisitos-credito-para-pensionados-colombia[.]html'
+import { Route as SimuladorCreditoColombiaDothtmlRouteImport } from './routes/simulador-credito-colombia[.]html'
+import { Route as SimuladorCreditoComoFuncionaDothtmlRouteImport } from './routes/simulador-credito-como-funciona[.]html'
+import { Route as TablaAmortizacionCreditoDothtmlRouteImport } from './routes/tabla-amortizacion-credito[.]html'
+import { Route as TasaDeUsuraColombiaDothtmlRouteImport } from './routes/tasa-de-usura-colombia[.]html'
+import { Route as TasasInteresCreditosColombiaDothtmlRouteImport } from './routes/tasas-interes-creditos-colombia[.]html'
+import { Route as TasasInteresPrestamosOnlineDothtmlRouteImport } from './routes/tasas-interes-prestamos-online[.]html'
+import { Route as TerminosDothtmlRouteImport } from './routes/terminos[.]html'
+import { Route as VerificarEmpresaPrestamosLegitimaDothtmlRouteImport } from './routes/verificar-empresa-prestamos-legitima[.]html'
+import { Route as VerificarPrestamistaLegalColombiaDothtmlRouteImport } from './routes/verificar-prestamista-legal-colombia[.]html'
+import { Route as DivulgacionAfiliadosIndexRouteImport } from './routes/divulgacion-afiliados/index'
+import { Route as EnIndexRouteImport } from './routes/en/index'
+import { Route as EnSlugRouteImport } from './routes/en/$slug'
+import { Route as EnContactDothtmlRouteImport } from './routes/en/contact[.]html'
+import { Route as EnLoanOffersDothtmlRouteImport } from './routes/en/loan-offers[.]html'
+import { Route as EnPrivacyPolicyDothtmlRouteImport } from './routes/en/privacy-policy[.]html'
+import { Route as EnSitemapDothtmlRouteImport } from './routes/en/sitemap[.]html'
+import { Route as EnTermsDothtmlRouteImport } from './routes/en/terms[.]html'
+import { Route as MetodologiaIndexRouteImport } from './routes/metodologia/index'
+import { Route as PoliticaEditorialIndexRouteImport } from './routes/politica-editorial/index'
+import { Route as PrestamistasIndexRouteImport } from './routes/prestamistas/index'
+import { Route as PrestamoResponsableIndexRouteImport } from './routes/prestamo-responsable/index'
+import { Route as ProveedoresIndexRouteImport } from './routes/proveedores/index'
+import { Route as SobreNosotrosIndexRouteImport } from './routes/sobre-nosotros/index'
+import { Route as PrestamistasSlugIndexRouteImport } from './routes/prestamistas/$slug/index'
+import { Route as ProveedoresSlugIndexRouteImport } from './routes/proveedores/$slug/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AcuerdoPagoDeudaColombiaDothtmlRoute =
+  AcuerdoPagoDeudaColombiaDothtmlRouteImport.update({
+    id: '/acuerdo-pago-deuda-colombia.html',
+    path: '/acuerdo-pago-deuda-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AlternativasPrestamosOnlineDothtmlRoute =
+  AlternativasPrestamosOnlineDothtmlRouteImport.update({
+    id: '/alternativas-prestamos-online.html',
+    path: '/alternativas-prestamos-online.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AppsPrestamosColombiaDothtmlRoute =
+  AppsPrestamosColombiaDothtmlRouteImport.update({
+    id: '/apps-prestamos-colombia.html',
+    path: '/apps-prestamos-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CompraDeCarteraColombiaDothtmlRoute =
+  CompraDeCarteraColombiaDothtmlRouteImport.update({
+    id: '/compra-de-cartera-colombia.html',
+    path: '/compra-de-cartera-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ConsultarHistorialCrediticioGratisDothtmlRoute =
+  ConsultarHistorialCrediticioGratisDothtmlRouteImport.update({
+    id: '/consultar-historial-crediticio-gratis.html',
+    path: '/consultar-historial-crediticio-gratis.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ContactoDothtmlRoute = ContactoDothtmlRouteImport.update({
+  id: '/contacto.html',
+  path: '/contacto.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CostosOcultosCreditosOnlineDothtmlRoute =
+  CostosOcultosCreditosOnlineDothtmlRouteImport.update({
+    id: '/costos-ocultos-creditos-online.html',
+    path: '/costos-ocultos-creditos-online.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditoLibranzaColombiaDothtmlRoute =
+  CreditoLibranzaColombiaDothtmlRouteImport.update({
+    id: '/credito-libranza-colombia.html',
+    path: '/credito-libranza-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditoLibreInversionColombiaDothtmlRoute =
+  CreditoLibreInversionColombiaDothtmlRouteImport.update({
+    id: '/credito-libre-inversion-colombia.html',
+    path: '/credito-libre-inversion-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditoOnlineVsBancoDothtmlRoute =
+  CreditoOnlineVsBancoDothtmlRouteImport.update({
+    id: '/credito-online-vs-banco.html',
+    path: '/credito-online-vs-banco.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditoPensionadosMalHistorialColombiaDothtmlRoute =
+  CreditoPensionadosMalHistorialColombiaDothtmlRouteImport.update({
+    id: '/credito-pensionados-mal-historial-colombia.html',
+    path: '/credito-pensionados-mal-historial-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditoSinCuentaBancariaColombiaDothtmlRoute =
+  CreditoSinCuentaBancariaColombiaDothtmlRouteImport.update({
+    id: '/credito-sin-cuenta-bancaria-colombia.html',
+    path: '/credito-sin-cuenta-bancaria-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditoSinHistorialCrediticioDothtmlRoute =
+  CreditoSinHistorialCrediticioDothtmlRouteImport.update({
+    id: '/credito-sin-historial-crediticio.html',
+    path: '/credito-sin-historial-crediticio.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreditosOnlineColombiaDothtmlRoute =
+  CreditosOnlineColombiaDothtmlRouteImport.update({
+    id: '/creditos-online-colombia.html',
+    path: '/creditos-online-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute =
+  CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRouteImport.update({
+    id: '/cuanto-credito-puede-pedir-un-pensionado-colombia.html',
+    path: '/cuanto-credito-puede-pedir-un-pensionado-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DerechosConsumidorFinancieroColombiaDothtmlRoute =
+  DerechosConsumidorFinancieroColombiaDothtmlRouteImport.update({
+    id: '/derechos-consumidor-financiero-colombia.html',
+    path: '/derechos-consumidor-financiero-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DescuentoAutomaticoPensionadosColombiaDothtmlRoute =
+  DescuentoAutomaticoPensionadosColombiaDothtmlRouteImport.update({
+    id: '/descuento-automatico-pensionados-colombia.html',
+    path: '/descuento-automatico-pensionados-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EmbargoPorDeudasColombiaDothtmlRoute =
+  EmbargoPorDeudasColombiaDothtmlRouteImport.update({
+    id: '/embargo-por-deudas-colombia.html',
+    path: '/embargo-por-deudas-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EstafasPrestamosOnlineColombiaDothtmlRoute =
+  EstafasPrestamosOnlineColombiaDothtmlRouteImport.update({
+    id: '/estafas-prestamos-online-colombia.html',
+    path: '/estafas-prestamos-online-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EstudioDeCreditoColombiaDothtmlRoute =
+  EstudioDeCreditoColombiaDothtmlRouteImport.update({
+    id: '/estudio-de-credito-colombia.html',
+    path: '/estudio-de-credito-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GotaAGotaColombiaDothtmlRoute =
+  GotaAGotaColombiaDothtmlRouteImport.update({
+    id: '/gota-a-gota-colombia.html',
+    path: '/gota-a-gota-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const HistorialCrediticioDatacreditoColombiaDothtmlRoute =
+  HistorialCrediticioDatacreditoColombiaDothtmlRouteImport.update({
+    id: '/historial-crediticio-datacredito-colombia.html',
+    path: '/historial-crediticio-datacredito-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InsolvenciaPersonaNaturalColombiaDothtmlRoute =
+  InsolvenciaPersonaNaturalColombiaDothtmlRouteImport.update({
+    id: '/insolvencia-persona-natural-colombia.html',
+    path: '/insolvencia-persona-natural-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MapaSitioDothtmlRoute = MapaSitioDothtmlRouteImport.update({
+  id: '/mapa-sitio.html',
+  path: '/mapa-sitio.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MicrocreditosColombiaDothtmlRoute =
+  MicrocreditosColombiaDothtmlRouteImport.update({
+    id: '/microcreditos-colombia.html',
+    path: '/microcreditos-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const NoPuedoPagarPrestamoQueHacerDothtmlRoute =
+  NoPuedoPagarPrestamoQueHacerDothtmlRouteImport.update({
+    id: '/no-puedo-pagar-prestamo-que-hacer.html',
+    path: '/no-puedo-pagar-prestamo-que-hacer.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OfertasCreditosDothtmlRoute = OfertasCreditosDothtmlRouteImport.update({
+  id: '/ofertas-creditos.html',
+  path: '/ofertas-creditos.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PeligrosGotaGotaColombiaDothtmlRoute =
+  PeligrosGotaGotaColombiaDothtmlRouteImport.update({
+    id: '/peligros-gota-gota-colombia.html',
+    path: '/peligros-gota-gota-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PoliticaPrivacidadDothtmlRoute =
+  PoliticaPrivacidadDothtmlRouteImport.update({
+    id: '/politica-privacidad.html',
+    path: '/politica-privacidad.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamoReportadoDatacreditoDothtmlRoute =
+  PrestamoReportadoDatacreditoDothtmlRouteImport.update({
+    id: '/prestamo-reportado-datacredito.html',
+    path: '/prestamo-reportado-datacredito.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamoSoloConCedulaColombiaDothtmlRoute =
+  PrestamoSoloConCedulaColombiaDothtmlRouteImport.update({
+    id: '/prestamo-solo-con-cedula-colombia.html',
+    path: '/prestamo-solo-con-cedula-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosBajoMontoColombiaDothtmlRoute =
+  PrestamosBajoMontoColombiaDothtmlRouteImport.update({
+    id: '/prestamos-bajo-monto-colombia.html',
+    path: '/prestamos-bajo-monto-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosInmediatosEnLineaDothtmlRoute =
+  PrestamosInmediatosEnLineaDothtmlRouteImport.update({
+    id: '/prestamos-inmediatos-en-linea.html',
+    path: '/prestamos-inmediatos-en-linea.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosParaIndependientesColombiaDothtmlRoute =
+  PrestamosParaIndependientesColombiaDothtmlRouteImport.update({
+    id: '/prestamos-para-independientes-colombia.html',
+    path: '/prestamos-para-independientes-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosParaPensionadosColombiaRoute =
+  PrestamosParaPensionadosColombiaRouteImport.update({
+    id: '/prestamos-para-pensionados-colombia',
+    path: '/prestamos-para-pensionados-colombia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosParaPensionadosColombiaDothtmlRoute =
+  PrestamosParaPensionadosColombiaDothtmlRouteImport.update({
+    id: '/prestamos-para-pensionados-colombia.html',
+    path: '/prestamos-para-pensionados-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosPequenosMontosColombiaDothtmlRoute =
+  PrestamosPequenosMontosColombiaDothtmlRouteImport.update({
+    id: '/prestamos-pequenos-montos-colombia.html',
+    path: '/prestamos-pequenos-montos-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosRapidosInmediatosColombiaDothtmlRoute =
+  PrestamosRapidosInmediatosColombiaDothtmlRouteImport.update({
+    id: '/prestamos-rapidos-inmediatos-colombia.html',
+    path: '/prestamos-rapidos-inmediatos-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestamosSinCodeudorColombiaDothtmlRoute =
+  PrestamosSinCodeudorColombiaDothtmlRouteImport.update({
+    id: '/prestamos-sin-codeudor-colombia.html',
+    path: '/prestamos-sin-codeudor-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PuntajeCrediticioColombiaDothtmlRoute =
+  PuntajeCrediticioColombiaDothtmlRouteImport.update({
+    id: '/puntaje-crediticio-colombia.html',
+    path: '/puntaje-crediticio-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const QueEsEstudioDeCreditoDothtmlRoute =
+  QueEsEstudioDeCreditoDothtmlRouteImport.update({
+    id: '/que-es-estudio-de-credito.html',
+    path: '/que-es-estudio-de-credito.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const RefinanciarReestructurarDeudaDothtmlRoute =
+  RefinanciarReestructurarDeudaDothtmlRouteImport.update({
+    id: '/refinanciar-reestructurar-deuda.html',
+    path: '/refinanciar-reestructurar-deuda.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const RequisitosCreditoOnlineColombiaDothtmlRoute =
+  RequisitosCreditoOnlineColombiaDothtmlRouteImport.update({
+    id: '/requisitos-credito-online-colombia.html',
+    path: '/requisitos-credito-online-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const RequisitosCreditoParaPensionadosColombiaDothtmlRoute =
+  RequisitosCreditoParaPensionadosColombiaDothtmlRouteImport.update({
+    id: '/requisitos-credito-para-pensionados-colombia.html',
+    path: '/requisitos-credito-para-pensionados-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SimuladorCreditoColombiaDothtmlRoute =
+  SimuladorCreditoColombiaDothtmlRouteImport.update({
+    id: '/simulador-credito-colombia.html',
+    path: '/simulador-credito-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SimuladorCreditoComoFuncionaDothtmlRoute =
+  SimuladorCreditoComoFuncionaDothtmlRouteImport.update({
+    id: '/simulador-credito-como-funciona.html',
+    path: '/simulador-credito-como-funciona.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TablaAmortizacionCreditoDothtmlRoute =
+  TablaAmortizacionCreditoDothtmlRouteImport.update({
+    id: '/tabla-amortizacion-credito.html',
+    path: '/tabla-amortizacion-credito.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TasaDeUsuraColombiaDothtmlRoute =
+  TasaDeUsuraColombiaDothtmlRouteImport.update({
+    id: '/tasa-de-usura-colombia.html',
+    path: '/tasa-de-usura-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TasasInteresCreditosColombiaDothtmlRoute =
+  TasasInteresCreditosColombiaDothtmlRouteImport.update({
+    id: '/tasas-interes-creditos-colombia.html',
+    path: '/tasas-interes-creditos-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TasasInteresPrestamosOnlineDothtmlRoute =
+  TasasInteresPrestamosOnlineDothtmlRouteImport.update({
+    id: '/tasas-interes-prestamos-online.html',
+    path: '/tasas-interes-prestamos-online.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TerminosDothtmlRoute = TerminosDothtmlRouteImport.update({
+  id: '/terminos.html',
+  path: '/terminos.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VerificarEmpresaPrestamosLegitimaDothtmlRoute =
+  VerificarEmpresaPrestamosLegitimaDothtmlRouteImport.update({
+    id: '/verificar-empresa-prestamos-legitima.html',
+    path: '/verificar-empresa-prestamos-legitima.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const VerificarPrestamistaLegalColombiaDothtmlRoute =
+  VerificarPrestamistaLegalColombiaDothtmlRouteImport.update({
+    id: '/verificar-prestamista-legal-colombia.html',
+    path: '/verificar-prestamista-legal-colombia.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DivulgacionAfiliadosIndexRoute =
+  DivulgacionAfiliadosIndexRouteImport.update({
+    id: '/divulgacion-afiliados/',
+    path: '/divulgacion-afiliados/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EnIndexRoute = EnIndexRouteImport.update({
+  id: '/en/',
+  path: '/en/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnSlugRoute = EnSlugRouteImport.update({
+  id: '/en/$slug',
+  path: '/en/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnContactDothtmlRoute = EnContactDothtmlRouteImport.update({
+  id: '/en/contact.html',
+  path: '/en/contact.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnLoanOffersDothtmlRoute = EnLoanOffersDothtmlRouteImport.update({
+  id: '/en/loan-offers.html',
+  path: '/en/loan-offers.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnPrivacyPolicyDothtmlRoute = EnPrivacyPolicyDothtmlRouteImport.update({
+  id: '/en/privacy-policy.html',
+  path: '/en/privacy-policy.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnSitemapDothtmlRoute = EnSitemapDothtmlRouteImport.update({
+  id: '/en/sitemap.html',
+  path: '/en/sitemap.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnTermsDothtmlRoute = EnTermsDothtmlRouteImport.update({
+  id: '/en/terms.html',
+  path: '/en/terms.html',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetodologiaIndexRoute = MetodologiaIndexRouteImport.update({
+  id: '/metodologia/',
+  path: '/metodologia/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaEditorialIndexRoute = PoliticaEditorialIndexRouteImport.update({
+  id: '/politica-editorial/',
+  path: '/politica-editorial/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrestamistasIndexRoute = PrestamistasIndexRouteImport.update({
+  id: '/prestamistas/',
+  path: '/prestamistas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrestamoResponsableIndexRoute =
+  PrestamoResponsableIndexRouteImport.update({
+    id: '/prestamo-responsable/',
+    path: '/prestamo-responsable/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProveedoresIndexRoute = ProveedoresIndexRouteImport.update({
+  id: '/proveedores/',
+  path: '/proveedores/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreNosotrosIndexRoute = SobreNosotrosIndexRouteImport.update({
+  id: '/sobre-nosotros/',
+  path: '/sobre-nosotros/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrestamistasSlugIndexRoute = PrestamistasSlugIndexRouteImport.update({
+  id: '/prestamistas/$slug/',
+  path: '/prestamistas/$slug/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProveedoresSlugIndexRoute = ProveedoresSlugIndexRouteImport.update({
+  id: '/proveedores/$slug/',
+  path: '/proveedores/$slug/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/acuerdo-pago-deuda-colombia.html': typeof AcuerdoPagoDeudaColombiaDothtmlRoute
+  '/alternativas-prestamos-online.html': typeof AlternativasPrestamosOnlineDothtmlRoute
+  '/apps-prestamos-colombia.html': typeof AppsPrestamosColombiaDothtmlRoute
+  '/compra-de-cartera-colombia.html': typeof CompraDeCarteraColombiaDothtmlRoute
+  '/consultar-historial-crediticio-gratis.html': typeof ConsultarHistorialCrediticioGratisDothtmlRoute
+  '/contacto.html': typeof ContactoDothtmlRoute
+  '/costos-ocultos-creditos-online.html': typeof CostosOcultosCreditosOnlineDothtmlRoute
+  '/credito-libranza-colombia.html': typeof CreditoLibranzaColombiaDothtmlRoute
+  '/credito-libre-inversion-colombia.html': typeof CreditoLibreInversionColombiaDothtmlRoute
+  '/credito-online-vs-banco.html': typeof CreditoOnlineVsBancoDothtmlRoute
+  '/credito-pensionados-mal-historial-colombia.html': typeof CreditoPensionadosMalHistorialColombiaDothtmlRoute
+  '/credito-sin-cuenta-bancaria-colombia.html': typeof CreditoSinCuentaBancariaColombiaDothtmlRoute
+  '/credito-sin-historial-crediticio.html': typeof CreditoSinHistorialCrediticioDothtmlRoute
+  '/creditos-online-colombia.html': typeof CreditosOnlineColombiaDothtmlRoute
+  '/cuanto-credito-puede-pedir-un-pensionado-colombia.html': typeof CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute
+  '/derechos-consumidor-financiero-colombia.html': typeof DerechosConsumidorFinancieroColombiaDothtmlRoute
+  '/descuento-automatico-pensionados-colombia.html': typeof DescuentoAutomaticoPensionadosColombiaDothtmlRoute
+  '/embargo-por-deudas-colombia.html': typeof EmbargoPorDeudasColombiaDothtmlRoute
+  '/estafas-prestamos-online-colombia.html': typeof EstafasPrestamosOnlineColombiaDothtmlRoute
+  '/estudio-de-credito-colombia.html': typeof EstudioDeCreditoColombiaDothtmlRoute
+  '/gota-a-gota-colombia.html': typeof GotaAGotaColombiaDothtmlRoute
+  '/historial-crediticio-datacredito-colombia.html': typeof HistorialCrediticioDatacreditoColombiaDothtmlRoute
+  '/insolvencia-persona-natural-colombia.html': typeof InsolvenciaPersonaNaturalColombiaDothtmlRoute
+  '/mapa-sitio.html': typeof MapaSitioDothtmlRoute
+  '/microcreditos-colombia.html': typeof MicrocreditosColombiaDothtmlRoute
+  '/no-puedo-pagar-prestamo-que-hacer.html': typeof NoPuedoPagarPrestamoQueHacerDothtmlRoute
+  '/ofertas-creditos.html': typeof OfertasCreditosDothtmlRoute
+  '/peligros-gota-gota-colombia.html': typeof PeligrosGotaGotaColombiaDothtmlRoute
+  '/politica-privacidad.html': typeof PoliticaPrivacidadDothtmlRoute
+  '/prestamo-reportado-datacredito.html': typeof PrestamoReportadoDatacreditoDothtmlRoute
+  '/prestamo-solo-con-cedula-colombia.html': typeof PrestamoSoloConCedulaColombiaDothtmlRoute
+  '/prestamos-bajo-monto-colombia.html': typeof PrestamosBajoMontoColombiaDothtmlRoute
+  '/prestamos-inmediatos-en-linea.html': typeof PrestamosInmediatosEnLineaDothtmlRoute
+  '/prestamos-para-independientes-colombia.html': typeof PrestamosParaIndependientesColombiaDothtmlRoute
+  '/prestamos-para-pensionados-colombia': typeof PrestamosParaPensionadosColombiaRoute
+  '/prestamos-para-pensionados-colombia.html': typeof PrestamosParaPensionadosColombiaDothtmlRoute
+  '/prestamos-pequenos-montos-colombia.html': typeof PrestamosPequenosMontosColombiaDothtmlRoute
+  '/prestamos-rapidos-inmediatos-colombia.html': typeof PrestamosRapidosInmediatosColombiaDothtmlRoute
+  '/prestamos-sin-codeudor-colombia.html': typeof PrestamosSinCodeudorColombiaDothtmlRoute
+  '/puntaje-crediticio-colombia.html': typeof PuntajeCrediticioColombiaDothtmlRoute
+  '/que-es-estudio-de-credito.html': typeof QueEsEstudioDeCreditoDothtmlRoute
+  '/refinanciar-reestructurar-deuda.html': typeof RefinanciarReestructurarDeudaDothtmlRoute
+  '/requisitos-credito-online-colombia.html': typeof RequisitosCreditoOnlineColombiaDothtmlRoute
+  '/requisitos-credito-para-pensionados-colombia.html': typeof RequisitosCreditoParaPensionadosColombiaDothtmlRoute
+  '/simulador-credito-colombia.html': typeof SimuladorCreditoColombiaDothtmlRoute
+  '/simulador-credito-como-funciona.html': typeof SimuladorCreditoComoFuncionaDothtmlRoute
+  '/tabla-amortizacion-credito.html': typeof TablaAmortizacionCreditoDothtmlRoute
+  '/tasa-de-usura-colombia.html': typeof TasaDeUsuraColombiaDothtmlRoute
+  '/tasas-interes-creditos-colombia.html': typeof TasasInteresCreditosColombiaDothtmlRoute
+  '/tasas-interes-prestamos-online.html': typeof TasasInteresPrestamosOnlineDothtmlRoute
+  '/terminos.html': typeof TerminosDothtmlRoute
+  '/verificar-empresa-prestamos-legitima.html': typeof VerificarEmpresaPrestamosLegitimaDothtmlRoute
+  '/verificar-prestamista-legal-colombia.html': typeof VerificarPrestamistaLegalColombiaDothtmlRoute
+  '/en/$slug': typeof EnSlugRoute
+  '/en/contact.html': typeof EnContactDothtmlRoute
+  '/en/loan-offers.html': typeof EnLoanOffersDothtmlRoute
+  '/en/privacy-policy.html': typeof EnPrivacyPolicyDothtmlRoute
+  '/en/sitemap.html': typeof EnSitemapDothtmlRoute
+  '/en/terms.html': typeof EnTermsDothtmlRoute
+  '/divulgacion-afiliados/': typeof DivulgacionAfiliadosIndexRoute
+  '/en/': typeof EnIndexRoute
+  '/metodologia/': typeof MetodologiaIndexRoute
+  '/politica-editorial/': typeof PoliticaEditorialIndexRoute
+  '/prestamistas/': typeof PrestamistasIndexRoute
+  '/prestamo-responsable/': typeof PrestamoResponsableIndexRoute
+  '/proveedores/': typeof ProveedoresIndexRoute
+  '/sobre-nosotros/': typeof SobreNosotrosIndexRoute
+  '/prestamistas/$slug/': typeof PrestamistasSlugIndexRoute
+  '/proveedores/$slug/': typeof ProveedoresSlugIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/acuerdo-pago-deuda-colombia.html': typeof AcuerdoPagoDeudaColombiaDothtmlRoute
+  '/alternativas-prestamos-online.html': typeof AlternativasPrestamosOnlineDothtmlRoute
+  '/apps-prestamos-colombia.html': typeof AppsPrestamosColombiaDothtmlRoute
+  '/compra-de-cartera-colombia.html': typeof CompraDeCarteraColombiaDothtmlRoute
+  '/consultar-historial-crediticio-gratis.html': typeof ConsultarHistorialCrediticioGratisDothtmlRoute
+  '/contacto.html': typeof ContactoDothtmlRoute
+  '/costos-ocultos-creditos-online.html': typeof CostosOcultosCreditosOnlineDothtmlRoute
+  '/credito-libranza-colombia.html': typeof CreditoLibranzaColombiaDothtmlRoute
+  '/credito-libre-inversion-colombia.html': typeof CreditoLibreInversionColombiaDothtmlRoute
+  '/credito-online-vs-banco.html': typeof CreditoOnlineVsBancoDothtmlRoute
+  '/credito-pensionados-mal-historial-colombia.html': typeof CreditoPensionadosMalHistorialColombiaDothtmlRoute
+  '/credito-sin-cuenta-bancaria-colombia.html': typeof CreditoSinCuentaBancariaColombiaDothtmlRoute
+  '/credito-sin-historial-crediticio.html': typeof CreditoSinHistorialCrediticioDothtmlRoute
+  '/creditos-online-colombia.html': typeof CreditosOnlineColombiaDothtmlRoute
+  '/cuanto-credito-puede-pedir-un-pensionado-colombia.html': typeof CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute
+  '/derechos-consumidor-financiero-colombia.html': typeof DerechosConsumidorFinancieroColombiaDothtmlRoute
+  '/descuento-automatico-pensionados-colombia.html': typeof DescuentoAutomaticoPensionadosColombiaDothtmlRoute
+  '/embargo-por-deudas-colombia.html': typeof EmbargoPorDeudasColombiaDothtmlRoute
+  '/estafas-prestamos-online-colombia.html': typeof EstafasPrestamosOnlineColombiaDothtmlRoute
+  '/estudio-de-credito-colombia.html': typeof EstudioDeCreditoColombiaDothtmlRoute
+  '/gota-a-gota-colombia.html': typeof GotaAGotaColombiaDothtmlRoute
+  '/historial-crediticio-datacredito-colombia.html': typeof HistorialCrediticioDatacreditoColombiaDothtmlRoute
+  '/insolvencia-persona-natural-colombia.html': typeof InsolvenciaPersonaNaturalColombiaDothtmlRoute
+  '/mapa-sitio.html': typeof MapaSitioDothtmlRoute
+  '/microcreditos-colombia.html': typeof MicrocreditosColombiaDothtmlRoute
+  '/no-puedo-pagar-prestamo-que-hacer.html': typeof NoPuedoPagarPrestamoQueHacerDothtmlRoute
+  '/ofertas-creditos.html': typeof OfertasCreditosDothtmlRoute
+  '/peligros-gota-gota-colombia.html': typeof PeligrosGotaGotaColombiaDothtmlRoute
+  '/politica-privacidad.html': typeof PoliticaPrivacidadDothtmlRoute
+  '/prestamo-reportado-datacredito.html': typeof PrestamoReportadoDatacreditoDothtmlRoute
+  '/prestamo-solo-con-cedula-colombia.html': typeof PrestamoSoloConCedulaColombiaDothtmlRoute
+  '/prestamos-bajo-monto-colombia.html': typeof PrestamosBajoMontoColombiaDothtmlRoute
+  '/prestamos-inmediatos-en-linea.html': typeof PrestamosInmediatosEnLineaDothtmlRoute
+  '/prestamos-para-independientes-colombia.html': typeof PrestamosParaIndependientesColombiaDothtmlRoute
+  '/prestamos-para-pensionados-colombia': typeof PrestamosParaPensionadosColombiaRoute
+  '/prestamos-para-pensionados-colombia.html': typeof PrestamosParaPensionadosColombiaDothtmlRoute
+  '/prestamos-pequenos-montos-colombia.html': typeof PrestamosPequenosMontosColombiaDothtmlRoute
+  '/prestamos-rapidos-inmediatos-colombia.html': typeof PrestamosRapidosInmediatosColombiaDothtmlRoute
+  '/prestamos-sin-codeudor-colombia.html': typeof PrestamosSinCodeudorColombiaDothtmlRoute
+  '/puntaje-crediticio-colombia.html': typeof PuntajeCrediticioColombiaDothtmlRoute
+  '/que-es-estudio-de-credito.html': typeof QueEsEstudioDeCreditoDothtmlRoute
+  '/refinanciar-reestructurar-deuda.html': typeof RefinanciarReestructurarDeudaDothtmlRoute
+  '/requisitos-credito-online-colombia.html': typeof RequisitosCreditoOnlineColombiaDothtmlRoute
+  '/requisitos-credito-para-pensionados-colombia.html': typeof RequisitosCreditoParaPensionadosColombiaDothtmlRoute
+  '/simulador-credito-colombia.html': typeof SimuladorCreditoColombiaDothtmlRoute
+  '/simulador-credito-como-funciona.html': typeof SimuladorCreditoComoFuncionaDothtmlRoute
+  '/tabla-amortizacion-credito.html': typeof TablaAmortizacionCreditoDothtmlRoute
+  '/tasa-de-usura-colombia.html': typeof TasaDeUsuraColombiaDothtmlRoute
+  '/tasas-interes-creditos-colombia.html': typeof TasasInteresCreditosColombiaDothtmlRoute
+  '/tasas-interes-prestamos-online.html': typeof TasasInteresPrestamosOnlineDothtmlRoute
+  '/terminos.html': typeof TerminosDothtmlRoute
+  '/verificar-empresa-prestamos-legitima.html': typeof VerificarEmpresaPrestamosLegitimaDothtmlRoute
+  '/verificar-prestamista-legal-colombia.html': typeof VerificarPrestamistaLegalColombiaDothtmlRoute
+  '/en/$slug': typeof EnSlugRoute
+  '/en/contact.html': typeof EnContactDothtmlRoute
+  '/en/loan-offers.html': typeof EnLoanOffersDothtmlRoute
+  '/en/privacy-policy.html': typeof EnPrivacyPolicyDothtmlRoute
+  '/en/sitemap.html': typeof EnSitemapDothtmlRoute
+  '/en/terms.html': typeof EnTermsDothtmlRoute
+  '/divulgacion-afiliados': typeof DivulgacionAfiliadosIndexRoute
+  '/en': typeof EnIndexRoute
+  '/metodologia': typeof MetodologiaIndexRoute
+  '/politica-editorial': typeof PoliticaEditorialIndexRoute
+  '/prestamistas': typeof PrestamistasIndexRoute
+  '/prestamo-responsable': typeof PrestamoResponsableIndexRoute
+  '/proveedores': typeof ProveedoresIndexRoute
+  '/sobre-nosotros': typeof SobreNosotrosIndexRoute
+  '/prestamistas/$slug': typeof PrestamistasSlugIndexRoute
+  '/proveedores/$slug': typeof ProveedoresSlugIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/acuerdo-pago-deuda-colombia.html': typeof AcuerdoPagoDeudaColombiaDothtmlRoute
+  '/alternativas-prestamos-online.html': typeof AlternativasPrestamosOnlineDothtmlRoute
+  '/apps-prestamos-colombia.html': typeof AppsPrestamosColombiaDothtmlRoute
+  '/compra-de-cartera-colombia.html': typeof CompraDeCarteraColombiaDothtmlRoute
+  '/consultar-historial-crediticio-gratis.html': typeof ConsultarHistorialCrediticioGratisDothtmlRoute
+  '/contacto.html': typeof ContactoDothtmlRoute
+  '/costos-ocultos-creditos-online.html': typeof CostosOcultosCreditosOnlineDothtmlRoute
+  '/credito-libranza-colombia.html': typeof CreditoLibranzaColombiaDothtmlRoute
+  '/credito-libre-inversion-colombia.html': typeof CreditoLibreInversionColombiaDothtmlRoute
+  '/credito-online-vs-banco.html': typeof CreditoOnlineVsBancoDothtmlRoute
+  '/credito-pensionados-mal-historial-colombia.html': typeof CreditoPensionadosMalHistorialColombiaDothtmlRoute
+  '/credito-sin-cuenta-bancaria-colombia.html': typeof CreditoSinCuentaBancariaColombiaDothtmlRoute
+  '/credito-sin-historial-crediticio.html': typeof CreditoSinHistorialCrediticioDothtmlRoute
+  '/creditos-online-colombia.html': typeof CreditosOnlineColombiaDothtmlRoute
+  '/cuanto-credito-puede-pedir-un-pensionado-colombia.html': typeof CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute
+  '/derechos-consumidor-financiero-colombia.html': typeof DerechosConsumidorFinancieroColombiaDothtmlRoute
+  '/descuento-automatico-pensionados-colombia.html': typeof DescuentoAutomaticoPensionadosColombiaDothtmlRoute
+  '/embargo-por-deudas-colombia.html': typeof EmbargoPorDeudasColombiaDothtmlRoute
+  '/estafas-prestamos-online-colombia.html': typeof EstafasPrestamosOnlineColombiaDothtmlRoute
+  '/estudio-de-credito-colombia.html': typeof EstudioDeCreditoColombiaDothtmlRoute
+  '/gota-a-gota-colombia.html': typeof GotaAGotaColombiaDothtmlRoute
+  '/historial-crediticio-datacredito-colombia.html': typeof HistorialCrediticioDatacreditoColombiaDothtmlRoute
+  '/insolvencia-persona-natural-colombia.html': typeof InsolvenciaPersonaNaturalColombiaDothtmlRoute
+  '/mapa-sitio.html': typeof MapaSitioDothtmlRoute
+  '/microcreditos-colombia.html': typeof MicrocreditosColombiaDothtmlRoute
+  '/no-puedo-pagar-prestamo-que-hacer.html': typeof NoPuedoPagarPrestamoQueHacerDothtmlRoute
+  '/ofertas-creditos.html': typeof OfertasCreditosDothtmlRoute
+  '/peligros-gota-gota-colombia.html': typeof PeligrosGotaGotaColombiaDothtmlRoute
+  '/politica-privacidad.html': typeof PoliticaPrivacidadDothtmlRoute
+  '/prestamo-reportado-datacredito.html': typeof PrestamoReportadoDatacreditoDothtmlRoute
+  '/prestamo-solo-con-cedula-colombia.html': typeof PrestamoSoloConCedulaColombiaDothtmlRoute
+  '/prestamos-bajo-monto-colombia.html': typeof PrestamosBajoMontoColombiaDothtmlRoute
+  '/prestamos-inmediatos-en-linea.html': typeof PrestamosInmediatosEnLineaDothtmlRoute
+  '/prestamos-para-independientes-colombia.html': typeof PrestamosParaIndependientesColombiaDothtmlRoute
+  '/prestamos-para-pensionados-colombia': typeof PrestamosParaPensionadosColombiaRoute
+  '/prestamos-para-pensionados-colombia.html': typeof PrestamosParaPensionadosColombiaDothtmlRoute
+  '/prestamos-pequenos-montos-colombia.html': typeof PrestamosPequenosMontosColombiaDothtmlRoute
+  '/prestamos-rapidos-inmediatos-colombia.html': typeof PrestamosRapidosInmediatosColombiaDothtmlRoute
+  '/prestamos-sin-codeudor-colombia.html': typeof PrestamosSinCodeudorColombiaDothtmlRoute
+  '/puntaje-crediticio-colombia.html': typeof PuntajeCrediticioColombiaDothtmlRoute
+  '/que-es-estudio-de-credito.html': typeof QueEsEstudioDeCreditoDothtmlRoute
+  '/refinanciar-reestructurar-deuda.html': typeof RefinanciarReestructurarDeudaDothtmlRoute
+  '/requisitos-credito-online-colombia.html': typeof RequisitosCreditoOnlineColombiaDothtmlRoute
+  '/requisitos-credito-para-pensionados-colombia.html': typeof RequisitosCreditoParaPensionadosColombiaDothtmlRoute
+  '/simulador-credito-colombia.html': typeof SimuladorCreditoColombiaDothtmlRoute
+  '/simulador-credito-como-funciona.html': typeof SimuladorCreditoComoFuncionaDothtmlRoute
+  '/tabla-amortizacion-credito.html': typeof TablaAmortizacionCreditoDothtmlRoute
+  '/tasa-de-usura-colombia.html': typeof TasaDeUsuraColombiaDothtmlRoute
+  '/tasas-interes-creditos-colombia.html': typeof TasasInteresCreditosColombiaDothtmlRoute
+  '/tasas-interes-prestamos-online.html': typeof TasasInteresPrestamosOnlineDothtmlRoute
+  '/terminos.html': typeof TerminosDothtmlRoute
+  '/verificar-empresa-prestamos-legitima.html': typeof VerificarEmpresaPrestamosLegitimaDothtmlRoute
+  '/verificar-prestamista-legal-colombia.html': typeof VerificarPrestamistaLegalColombiaDothtmlRoute
+  '/en/$slug': typeof EnSlugRoute
+  '/en/contact.html': typeof EnContactDothtmlRoute
+  '/en/loan-offers.html': typeof EnLoanOffersDothtmlRoute
+  '/en/privacy-policy.html': typeof EnPrivacyPolicyDothtmlRoute
+  '/en/sitemap.html': typeof EnSitemapDothtmlRoute
+  '/en/terms.html': typeof EnTermsDothtmlRoute
+  '/divulgacion-afiliados/': typeof DivulgacionAfiliadosIndexRoute
+  '/en/': typeof EnIndexRoute
+  '/metodologia/': typeof MetodologiaIndexRoute
+  '/politica-editorial/': typeof PoliticaEditorialIndexRoute
+  '/prestamistas/': typeof PrestamistasIndexRoute
+  '/prestamo-responsable/': typeof PrestamoResponsableIndexRoute
+  '/proveedores/': typeof ProveedoresIndexRoute
+  '/sobre-nosotros/': typeof SobreNosotrosIndexRoute
+  '/prestamistas/$slug/': typeof PrestamistasSlugIndexRoute
+  '/proveedores/$slug/': typeof ProveedoresSlugIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/acuerdo-pago-deuda-colombia.html'
+    | '/alternativas-prestamos-online.html'
+    | '/apps-prestamos-colombia.html'
+    | '/compra-de-cartera-colombia.html'
+    | '/consultar-historial-crediticio-gratis.html'
+    | '/contacto.html'
+    | '/costos-ocultos-creditos-online.html'
+    | '/credito-libranza-colombia.html'
+    | '/credito-libre-inversion-colombia.html'
+    | '/credito-online-vs-banco.html'
+    | '/credito-pensionados-mal-historial-colombia.html'
+    | '/credito-sin-cuenta-bancaria-colombia.html'
+    | '/credito-sin-historial-crediticio.html'
+    | '/creditos-online-colombia.html'
+    | '/cuanto-credito-puede-pedir-un-pensionado-colombia.html'
+    | '/derechos-consumidor-financiero-colombia.html'
+    | '/descuento-automatico-pensionados-colombia.html'
+    | '/embargo-por-deudas-colombia.html'
+    | '/estafas-prestamos-online-colombia.html'
+    | '/estudio-de-credito-colombia.html'
+    | '/gota-a-gota-colombia.html'
+    | '/historial-crediticio-datacredito-colombia.html'
+    | '/insolvencia-persona-natural-colombia.html'
+    | '/mapa-sitio.html'
+    | '/microcreditos-colombia.html'
+    | '/no-puedo-pagar-prestamo-que-hacer.html'
+    | '/ofertas-creditos.html'
+    | '/peligros-gota-gota-colombia.html'
+    | '/politica-privacidad.html'
+    | '/prestamo-reportado-datacredito.html'
+    | '/prestamo-solo-con-cedula-colombia.html'
+    | '/prestamos-bajo-monto-colombia.html'
+    | '/prestamos-inmediatos-en-linea.html'
+    | '/prestamos-para-independientes-colombia.html'
+    | '/prestamos-para-pensionados-colombia'
+    | '/prestamos-para-pensionados-colombia.html'
+    | '/prestamos-pequenos-montos-colombia.html'
+    | '/prestamos-rapidos-inmediatos-colombia.html'
+    | '/prestamos-sin-codeudor-colombia.html'
+    | '/puntaje-crediticio-colombia.html'
+    | '/que-es-estudio-de-credito.html'
+    | '/refinanciar-reestructurar-deuda.html'
+    | '/requisitos-credito-online-colombia.html'
+    | '/requisitos-credito-para-pensionados-colombia.html'
+    | '/simulador-credito-colombia.html'
+    | '/simulador-credito-como-funciona.html'
+    | '/tabla-amortizacion-credito.html'
+    | '/tasa-de-usura-colombia.html'
+    | '/tasas-interes-creditos-colombia.html'
+    | '/tasas-interes-prestamos-online.html'
+    | '/terminos.html'
+    | '/verificar-empresa-prestamos-legitima.html'
+    | '/verificar-prestamista-legal-colombia.html'
+    | '/en/$slug'
+    | '/en/contact.html'
+    | '/en/loan-offers.html'
+    | '/en/privacy-policy.html'
+    | '/en/sitemap.html'
+    | '/en/terms.html'
+    | '/divulgacion-afiliados/'
+    | '/en/'
+    | '/metodologia/'
+    | '/politica-editorial/'
+    | '/prestamistas/'
+    | '/prestamo-responsable/'
+    | '/proveedores/'
+    | '/sobre-nosotros/'
+    | '/prestamistas/$slug/'
+    | '/proveedores/$slug/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/acuerdo-pago-deuda-colombia.html'
+    | '/alternativas-prestamos-online.html'
+    | '/apps-prestamos-colombia.html'
+    | '/compra-de-cartera-colombia.html'
+    | '/consultar-historial-crediticio-gratis.html'
+    | '/contacto.html'
+    | '/costos-ocultos-creditos-online.html'
+    | '/credito-libranza-colombia.html'
+    | '/credito-libre-inversion-colombia.html'
+    | '/credito-online-vs-banco.html'
+    | '/credito-pensionados-mal-historial-colombia.html'
+    | '/credito-sin-cuenta-bancaria-colombia.html'
+    | '/credito-sin-historial-crediticio.html'
+    | '/creditos-online-colombia.html'
+    | '/cuanto-credito-puede-pedir-un-pensionado-colombia.html'
+    | '/derechos-consumidor-financiero-colombia.html'
+    | '/descuento-automatico-pensionados-colombia.html'
+    | '/embargo-por-deudas-colombia.html'
+    | '/estafas-prestamos-online-colombia.html'
+    | '/estudio-de-credito-colombia.html'
+    | '/gota-a-gota-colombia.html'
+    | '/historial-crediticio-datacredito-colombia.html'
+    | '/insolvencia-persona-natural-colombia.html'
+    | '/mapa-sitio.html'
+    | '/microcreditos-colombia.html'
+    | '/no-puedo-pagar-prestamo-que-hacer.html'
+    | '/ofertas-creditos.html'
+    | '/peligros-gota-gota-colombia.html'
+    | '/politica-privacidad.html'
+    | '/prestamo-reportado-datacredito.html'
+    | '/prestamo-solo-con-cedula-colombia.html'
+    | '/prestamos-bajo-monto-colombia.html'
+    | '/prestamos-inmediatos-en-linea.html'
+    | '/prestamos-para-independientes-colombia.html'
+    | '/prestamos-para-pensionados-colombia'
+    | '/prestamos-para-pensionados-colombia.html'
+    | '/prestamos-pequenos-montos-colombia.html'
+    | '/prestamos-rapidos-inmediatos-colombia.html'
+    | '/prestamos-sin-codeudor-colombia.html'
+    | '/puntaje-crediticio-colombia.html'
+    | '/que-es-estudio-de-credito.html'
+    | '/refinanciar-reestructurar-deuda.html'
+    | '/requisitos-credito-online-colombia.html'
+    | '/requisitos-credito-para-pensionados-colombia.html'
+    | '/simulador-credito-colombia.html'
+    | '/simulador-credito-como-funciona.html'
+    | '/tabla-amortizacion-credito.html'
+    | '/tasa-de-usura-colombia.html'
+    | '/tasas-interes-creditos-colombia.html'
+    | '/tasas-interes-prestamos-online.html'
+    | '/terminos.html'
+    | '/verificar-empresa-prestamos-legitima.html'
+    | '/verificar-prestamista-legal-colombia.html'
+    | '/en/$slug'
+    | '/en/contact.html'
+    | '/en/loan-offers.html'
+    | '/en/privacy-policy.html'
+    | '/en/sitemap.html'
+    | '/en/terms.html'
+    | '/divulgacion-afiliados'
+    | '/en'
+    | '/metodologia'
+    | '/politica-editorial'
+    | '/prestamistas'
+    | '/prestamo-responsable'
+    | '/proveedores'
+    | '/sobre-nosotros'
+    | '/prestamistas/$slug'
+    | '/proveedores/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/acuerdo-pago-deuda-colombia.html'
+    | '/alternativas-prestamos-online.html'
+    | '/apps-prestamos-colombia.html'
+    | '/compra-de-cartera-colombia.html'
+    | '/consultar-historial-crediticio-gratis.html'
+    | '/contacto.html'
+    | '/costos-ocultos-creditos-online.html'
+    | '/credito-libranza-colombia.html'
+    | '/credito-libre-inversion-colombia.html'
+    | '/credito-online-vs-banco.html'
+    | '/credito-pensionados-mal-historial-colombia.html'
+    | '/credito-sin-cuenta-bancaria-colombia.html'
+    | '/credito-sin-historial-crediticio.html'
+    | '/creditos-online-colombia.html'
+    | '/cuanto-credito-puede-pedir-un-pensionado-colombia.html'
+    | '/derechos-consumidor-financiero-colombia.html'
+    | '/descuento-automatico-pensionados-colombia.html'
+    | '/embargo-por-deudas-colombia.html'
+    | '/estafas-prestamos-online-colombia.html'
+    | '/estudio-de-credito-colombia.html'
+    | '/gota-a-gota-colombia.html'
+    | '/historial-crediticio-datacredito-colombia.html'
+    | '/insolvencia-persona-natural-colombia.html'
+    | '/mapa-sitio.html'
+    | '/microcreditos-colombia.html'
+    | '/no-puedo-pagar-prestamo-que-hacer.html'
+    | '/ofertas-creditos.html'
+    | '/peligros-gota-gota-colombia.html'
+    | '/politica-privacidad.html'
+    | '/prestamo-reportado-datacredito.html'
+    | '/prestamo-solo-con-cedula-colombia.html'
+    | '/prestamos-bajo-monto-colombia.html'
+    | '/prestamos-inmediatos-en-linea.html'
+    | '/prestamos-para-independientes-colombia.html'
+    | '/prestamos-para-pensionados-colombia'
+    | '/prestamos-para-pensionados-colombia.html'
+    | '/prestamos-pequenos-montos-colombia.html'
+    | '/prestamos-rapidos-inmediatos-colombia.html'
+    | '/prestamos-sin-codeudor-colombia.html'
+    | '/puntaje-crediticio-colombia.html'
+    | '/que-es-estudio-de-credito.html'
+    | '/refinanciar-reestructurar-deuda.html'
+    | '/requisitos-credito-online-colombia.html'
+    | '/requisitos-credito-para-pensionados-colombia.html'
+    | '/simulador-credito-colombia.html'
+    | '/simulador-credito-como-funciona.html'
+    | '/tabla-amortizacion-credito.html'
+    | '/tasa-de-usura-colombia.html'
+    | '/tasas-interes-creditos-colombia.html'
+    | '/tasas-interes-prestamos-online.html'
+    | '/terminos.html'
+    | '/verificar-empresa-prestamos-legitima.html'
+    | '/verificar-prestamista-legal-colombia.html'
+    | '/en/$slug'
+    | '/en/contact.html'
+    | '/en/loan-offers.html'
+    | '/en/privacy-policy.html'
+    | '/en/sitemap.html'
+    | '/en/terms.html'
+    | '/divulgacion-afiliados/'
+    | '/en/'
+    | '/metodologia/'
+    | '/politica-editorial/'
+    | '/prestamistas/'
+    | '/prestamo-responsable/'
+    | '/proveedores/'
+    | '/sobre-nosotros/'
+    | '/prestamistas/$slug/'
+    | '/proveedores/$slug/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AcuerdoPagoDeudaColombiaDothtmlRoute: typeof AcuerdoPagoDeudaColombiaDothtmlRoute
+  AlternativasPrestamosOnlineDothtmlRoute: typeof AlternativasPrestamosOnlineDothtmlRoute
+  AppsPrestamosColombiaDothtmlRoute: typeof AppsPrestamosColombiaDothtmlRoute
+  CompraDeCarteraColombiaDothtmlRoute: typeof CompraDeCarteraColombiaDothtmlRoute
+  ConsultarHistorialCrediticioGratisDothtmlRoute: typeof ConsultarHistorialCrediticioGratisDothtmlRoute
+  ContactoDothtmlRoute: typeof ContactoDothtmlRoute
+  CostosOcultosCreditosOnlineDothtmlRoute: typeof CostosOcultosCreditosOnlineDothtmlRoute
+  CreditoLibranzaColombiaDothtmlRoute: typeof CreditoLibranzaColombiaDothtmlRoute
+  CreditoLibreInversionColombiaDothtmlRoute: typeof CreditoLibreInversionColombiaDothtmlRoute
+  CreditoOnlineVsBancoDothtmlRoute: typeof CreditoOnlineVsBancoDothtmlRoute
+  CreditoPensionadosMalHistorialColombiaDothtmlRoute: typeof CreditoPensionadosMalHistorialColombiaDothtmlRoute
+  CreditoSinCuentaBancariaColombiaDothtmlRoute: typeof CreditoSinCuentaBancariaColombiaDothtmlRoute
+  CreditoSinHistorialCrediticioDothtmlRoute: typeof CreditoSinHistorialCrediticioDothtmlRoute
+  CreditosOnlineColombiaDothtmlRoute: typeof CreditosOnlineColombiaDothtmlRoute
+  CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute: typeof CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute
+  DerechosConsumidorFinancieroColombiaDothtmlRoute: typeof DerechosConsumidorFinancieroColombiaDothtmlRoute
+  DescuentoAutomaticoPensionadosColombiaDothtmlRoute: typeof DescuentoAutomaticoPensionadosColombiaDothtmlRoute
+  EmbargoPorDeudasColombiaDothtmlRoute: typeof EmbargoPorDeudasColombiaDothtmlRoute
+  EstafasPrestamosOnlineColombiaDothtmlRoute: typeof EstafasPrestamosOnlineColombiaDothtmlRoute
+  EstudioDeCreditoColombiaDothtmlRoute: typeof EstudioDeCreditoColombiaDothtmlRoute
+  GotaAGotaColombiaDothtmlRoute: typeof GotaAGotaColombiaDothtmlRoute
+  HistorialCrediticioDatacreditoColombiaDothtmlRoute: typeof HistorialCrediticioDatacreditoColombiaDothtmlRoute
+  InsolvenciaPersonaNaturalColombiaDothtmlRoute: typeof InsolvenciaPersonaNaturalColombiaDothtmlRoute
+  MapaSitioDothtmlRoute: typeof MapaSitioDothtmlRoute
+  MicrocreditosColombiaDothtmlRoute: typeof MicrocreditosColombiaDothtmlRoute
+  NoPuedoPagarPrestamoQueHacerDothtmlRoute: typeof NoPuedoPagarPrestamoQueHacerDothtmlRoute
+  OfertasCreditosDothtmlRoute: typeof OfertasCreditosDothtmlRoute
+  PeligrosGotaGotaColombiaDothtmlRoute: typeof PeligrosGotaGotaColombiaDothtmlRoute
+  PoliticaPrivacidadDothtmlRoute: typeof PoliticaPrivacidadDothtmlRoute
+  PrestamoReportadoDatacreditoDothtmlRoute: typeof PrestamoReportadoDatacreditoDothtmlRoute
+  PrestamoSoloConCedulaColombiaDothtmlRoute: typeof PrestamoSoloConCedulaColombiaDothtmlRoute
+  PrestamosBajoMontoColombiaDothtmlRoute: typeof PrestamosBajoMontoColombiaDothtmlRoute
+  PrestamosInmediatosEnLineaDothtmlRoute: typeof PrestamosInmediatosEnLineaDothtmlRoute
+  PrestamosParaIndependientesColombiaDothtmlRoute: typeof PrestamosParaIndependientesColombiaDothtmlRoute
+  PrestamosParaPensionadosColombiaRoute: typeof PrestamosParaPensionadosColombiaRoute
+  PrestamosParaPensionadosColombiaDothtmlRoute: typeof PrestamosParaPensionadosColombiaDothtmlRoute
+  PrestamosPequenosMontosColombiaDothtmlRoute: typeof PrestamosPequenosMontosColombiaDothtmlRoute
+  PrestamosRapidosInmediatosColombiaDothtmlRoute: typeof PrestamosRapidosInmediatosColombiaDothtmlRoute
+  PrestamosSinCodeudorColombiaDothtmlRoute: typeof PrestamosSinCodeudorColombiaDothtmlRoute
+  PuntajeCrediticioColombiaDothtmlRoute: typeof PuntajeCrediticioColombiaDothtmlRoute
+  QueEsEstudioDeCreditoDothtmlRoute: typeof QueEsEstudioDeCreditoDothtmlRoute
+  RefinanciarReestructurarDeudaDothtmlRoute: typeof RefinanciarReestructurarDeudaDothtmlRoute
+  RequisitosCreditoOnlineColombiaDothtmlRoute: typeof RequisitosCreditoOnlineColombiaDothtmlRoute
+  RequisitosCreditoParaPensionadosColombiaDothtmlRoute: typeof RequisitosCreditoParaPensionadosColombiaDothtmlRoute
+  SimuladorCreditoColombiaDothtmlRoute: typeof SimuladorCreditoColombiaDothtmlRoute
+  SimuladorCreditoComoFuncionaDothtmlRoute: typeof SimuladorCreditoComoFuncionaDothtmlRoute
+  TablaAmortizacionCreditoDothtmlRoute: typeof TablaAmortizacionCreditoDothtmlRoute
+  TasaDeUsuraColombiaDothtmlRoute: typeof TasaDeUsuraColombiaDothtmlRoute
+  TasasInteresCreditosColombiaDothtmlRoute: typeof TasasInteresCreditosColombiaDothtmlRoute
+  TasasInteresPrestamosOnlineDothtmlRoute: typeof TasasInteresPrestamosOnlineDothtmlRoute
+  TerminosDothtmlRoute: typeof TerminosDothtmlRoute
+  VerificarEmpresaPrestamosLegitimaDothtmlRoute: typeof VerificarEmpresaPrestamosLegitimaDothtmlRoute
+  VerificarPrestamistaLegalColombiaDothtmlRoute: typeof VerificarPrestamistaLegalColombiaDothtmlRoute
+  EnSlugRoute: typeof EnSlugRoute
+  EnContactDothtmlRoute: typeof EnContactDothtmlRoute
+  EnLoanOffersDothtmlRoute: typeof EnLoanOffersDothtmlRoute
+  EnPrivacyPolicyDothtmlRoute: typeof EnPrivacyPolicyDothtmlRoute
+  EnSitemapDothtmlRoute: typeof EnSitemapDothtmlRoute
+  EnTermsDothtmlRoute: typeof EnTermsDothtmlRoute
+  DivulgacionAfiliadosIndexRoute: typeof DivulgacionAfiliadosIndexRoute
+  EnIndexRoute: typeof EnIndexRoute
+  MetodologiaIndexRoute: typeof MetodologiaIndexRoute
+  PoliticaEditorialIndexRoute: typeof PoliticaEditorialIndexRoute
+  PrestamistasIndexRoute: typeof PrestamistasIndexRoute
+  PrestamoResponsableIndexRoute: typeof PrestamoResponsableIndexRoute
+  ProveedoresIndexRoute: typeof ProveedoresIndexRoute
+  SobreNosotrosIndexRoute: typeof SobreNosotrosIndexRoute
+  PrestamistasSlugIndexRoute: typeof PrestamistasSlugIndexRoute
+  ProveedoresSlugIndexRoute: typeof ProveedoresSlugIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,12 +1000,605 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/acuerdo-pago-deuda-colombia.html': {
+      id: '/acuerdo-pago-deuda-colombia.html'
+      path: '/acuerdo-pago-deuda-colombia.html'
+      fullPath: '/acuerdo-pago-deuda-colombia.html'
+      preLoaderRoute: typeof AcuerdoPagoDeudaColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/alternativas-prestamos-online.html': {
+      id: '/alternativas-prestamos-online.html'
+      path: '/alternativas-prestamos-online.html'
+      fullPath: '/alternativas-prestamos-online.html'
+      preLoaderRoute: typeof AlternativasPrestamosOnlineDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apps-prestamos-colombia.html': {
+      id: '/apps-prestamos-colombia.html'
+      path: '/apps-prestamos-colombia.html'
+      fullPath: '/apps-prestamos-colombia.html'
+      preLoaderRoute: typeof AppsPrestamosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compra-de-cartera-colombia.html': {
+      id: '/compra-de-cartera-colombia.html'
+      path: '/compra-de-cartera-colombia.html'
+      fullPath: '/compra-de-cartera-colombia.html'
+      preLoaderRoute: typeof CompraDeCarteraColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/consultar-historial-crediticio-gratis.html': {
+      id: '/consultar-historial-crediticio-gratis.html'
+      path: '/consultar-historial-crediticio-gratis.html'
+      fullPath: '/consultar-historial-crediticio-gratis.html'
+      preLoaderRoute: typeof ConsultarHistorialCrediticioGratisDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto.html': {
+      id: '/contacto.html'
+      path: '/contacto.html'
+      fullPath: '/contacto.html'
+      preLoaderRoute: typeof ContactoDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/costos-ocultos-creditos-online.html': {
+      id: '/costos-ocultos-creditos-online.html'
+      path: '/costos-ocultos-creditos-online.html'
+      fullPath: '/costos-ocultos-creditos-online.html'
+      preLoaderRoute: typeof CostosOcultosCreditosOnlineDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credito-libranza-colombia.html': {
+      id: '/credito-libranza-colombia.html'
+      path: '/credito-libranza-colombia.html'
+      fullPath: '/credito-libranza-colombia.html'
+      preLoaderRoute: typeof CreditoLibranzaColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credito-libre-inversion-colombia.html': {
+      id: '/credito-libre-inversion-colombia.html'
+      path: '/credito-libre-inversion-colombia.html'
+      fullPath: '/credito-libre-inversion-colombia.html'
+      preLoaderRoute: typeof CreditoLibreInversionColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credito-online-vs-banco.html': {
+      id: '/credito-online-vs-banco.html'
+      path: '/credito-online-vs-banco.html'
+      fullPath: '/credito-online-vs-banco.html'
+      preLoaderRoute: typeof CreditoOnlineVsBancoDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credito-pensionados-mal-historial-colombia.html': {
+      id: '/credito-pensionados-mal-historial-colombia.html'
+      path: '/credito-pensionados-mal-historial-colombia.html'
+      fullPath: '/credito-pensionados-mal-historial-colombia.html'
+      preLoaderRoute: typeof CreditoPensionadosMalHistorialColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credito-sin-cuenta-bancaria-colombia.html': {
+      id: '/credito-sin-cuenta-bancaria-colombia.html'
+      path: '/credito-sin-cuenta-bancaria-colombia.html'
+      fullPath: '/credito-sin-cuenta-bancaria-colombia.html'
+      preLoaderRoute: typeof CreditoSinCuentaBancariaColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credito-sin-historial-crediticio.html': {
+      id: '/credito-sin-historial-crediticio.html'
+      path: '/credito-sin-historial-crediticio.html'
+      fullPath: '/credito-sin-historial-crediticio.html'
+      preLoaderRoute: typeof CreditoSinHistorialCrediticioDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creditos-online-colombia.html': {
+      id: '/creditos-online-colombia.html'
+      path: '/creditos-online-colombia.html'
+      fullPath: '/creditos-online-colombia.html'
+      preLoaderRoute: typeof CreditosOnlineColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cuanto-credito-puede-pedir-un-pensionado-colombia.html': {
+      id: '/cuanto-credito-puede-pedir-un-pensionado-colombia.html'
+      path: '/cuanto-credito-puede-pedir-un-pensionado-colombia.html'
+      fullPath: '/cuanto-credito-puede-pedir-un-pensionado-colombia.html'
+      preLoaderRoute: typeof CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/derechos-consumidor-financiero-colombia.html': {
+      id: '/derechos-consumidor-financiero-colombia.html'
+      path: '/derechos-consumidor-financiero-colombia.html'
+      fullPath: '/derechos-consumidor-financiero-colombia.html'
+      preLoaderRoute: typeof DerechosConsumidorFinancieroColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/descuento-automatico-pensionados-colombia.html': {
+      id: '/descuento-automatico-pensionados-colombia.html'
+      path: '/descuento-automatico-pensionados-colombia.html'
+      fullPath: '/descuento-automatico-pensionados-colombia.html'
+      preLoaderRoute: typeof DescuentoAutomaticoPensionadosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/embargo-por-deudas-colombia.html': {
+      id: '/embargo-por-deudas-colombia.html'
+      path: '/embargo-por-deudas-colombia.html'
+      fullPath: '/embargo-por-deudas-colombia.html'
+      preLoaderRoute: typeof EmbargoPorDeudasColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/estafas-prestamos-online-colombia.html': {
+      id: '/estafas-prestamos-online-colombia.html'
+      path: '/estafas-prestamos-online-colombia.html'
+      fullPath: '/estafas-prestamos-online-colombia.html'
+      preLoaderRoute: typeof EstafasPrestamosOnlineColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/estudio-de-credito-colombia.html': {
+      id: '/estudio-de-credito-colombia.html'
+      path: '/estudio-de-credito-colombia.html'
+      fullPath: '/estudio-de-credito-colombia.html'
+      preLoaderRoute: typeof EstudioDeCreditoColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gota-a-gota-colombia.html': {
+      id: '/gota-a-gota-colombia.html'
+      path: '/gota-a-gota-colombia.html'
+      fullPath: '/gota-a-gota-colombia.html'
+      preLoaderRoute: typeof GotaAGotaColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/historial-crediticio-datacredito-colombia.html': {
+      id: '/historial-crediticio-datacredito-colombia.html'
+      path: '/historial-crediticio-datacredito-colombia.html'
+      fullPath: '/historial-crediticio-datacredito-colombia.html'
+      preLoaderRoute: typeof HistorialCrediticioDatacreditoColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insolvencia-persona-natural-colombia.html': {
+      id: '/insolvencia-persona-natural-colombia.html'
+      path: '/insolvencia-persona-natural-colombia.html'
+      fullPath: '/insolvencia-persona-natural-colombia.html'
+      preLoaderRoute: typeof InsolvenciaPersonaNaturalColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mapa-sitio.html': {
+      id: '/mapa-sitio.html'
+      path: '/mapa-sitio.html'
+      fullPath: '/mapa-sitio.html'
+      preLoaderRoute: typeof MapaSitioDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/microcreditos-colombia.html': {
+      id: '/microcreditos-colombia.html'
+      path: '/microcreditos-colombia.html'
+      fullPath: '/microcreditos-colombia.html'
+      preLoaderRoute: typeof MicrocreditosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/no-puedo-pagar-prestamo-que-hacer.html': {
+      id: '/no-puedo-pagar-prestamo-que-hacer.html'
+      path: '/no-puedo-pagar-prestamo-que-hacer.html'
+      fullPath: '/no-puedo-pagar-prestamo-que-hacer.html'
+      preLoaderRoute: typeof NoPuedoPagarPrestamoQueHacerDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ofertas-creditos.html': {
+      id: '/ofertas-creditos.html'
+      path: '/ofertas-creditos.html'
+      fullPath: '/ofertas-creditos.html'
+      preLoaderRoute: typeof OfertasCreditosDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/peligros-gota-gota-colombia.html': {
+      id: '/peligros-gota-gota-colombia.html'
+      path: '/peligros-gota-gota-colombia.html'
+      fullPath: '/peligros-gota-gota-colombia.html'
+      preLoaderRoute: typeof PeligrosGotaGotaColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-privacidad.html': {
+      id: '/politica-privacidad.html'
+      path: '/politica-privacidad.html'
+      fullPath: '/politica-privacidad.html'
+      preLoaderRoute: typeof PoliticaPrivacidadDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamo-reportado-datacredito.html': {
+      id: '/prestamo-reportado-datacredito.html'
+      path: '/prestamo-reportado-datacredito.html'
+      fullPath: '/prestamo-reportado-datacredito.html'
+      preLoaderRoute: typeof PrestamoReportadoDatacreditoDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamo-solo-con-cedula-colombia.html': {
+      id: '/prestamo-solo-con-cedula-colombia.html'
+      path: '/prestamo-solo-con-cedula-colombia.html'
+      fullPath: '/prestamo-solo-con-cedula-colombia.html'
+      preLoaderRoute: typeof PrestamoSoloConCedulaColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-bajo-monto-colombia.html': {
+      id: '/prestamos-bajo-monto-colombia.html'
+      path: '/prestamos-bajo-monto-colombia.html'
+      fullPath: '/prestamos-bajo-monto-colombia.html'
+      preLoaderRoute: typeof PrestamosBajoMontoColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-inmediatos-en-linea.html': {
+      id: '/prestamos-inmediatos-en-linea.html'
+      path: '/prestamos-inmediatos-en-linea.html'
+      fullPath: '/prestamos-inmediatos-en-linea.html'
+      preLoaderRoute: typeof PrestamosInmediatosEnLineaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-para-independientes-colombia.html': {
+      id: '/prestamos-para-independientes-colombia.html'
+      path: '/prestamos-para-independientes-colombia.html'
+      fullPath: '/prestamos-para-independientes-colombia.html'
+      preLoaderRoute: typeof PrestamosParaIndependientesColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-para-pensionados-colombia': {
+      id: '/prestamos-para-pensionados-colombia'
+      path: '/prestamos-para-pensionados-colombia'
+      fullPath: '/prestamos-para-pensionados-colombia'
+      preLoaderRoute: typeof PrestamosParaPensionadosColombiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-para-pensionados-colombia.html': {
+      id: '/prestamos-para-pensionados-colombia.html'
+      path: '/prestamos-para-pensionados-colombia.html'
+      fullPath: '/prestamos-para-pensionados-colombia.html'
+      preLoaderRoute: typeof PrestamosParaPensionadosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-pequenos-montos-colombia.html': {
+      id: '/prestamos-pequenos-montos-colombia.html'
+      path: '/prestamos-pequenos-montos-colombia.html'
+      fullPath: '/prestamos-pequenos-montos-colombia.html'
+      preLoaderRoute: typeof PrestamosPequenosMontosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-rapidos-inmediatos-colombia.html': {
+      id: '/prestamos-rapidos-inmediatos-colombia.html'
+      path: '/prestamos-rapidos-inmediatos-colombia.html'
+      fullPath: '/prestamos-rapidos-inmediatos-colombia.html'
+      preLoaderRoute: typeof PrestamosRapidosInmediatosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamos-sin-codeudor-colombia.html': {
+      id: '/prestamos-sin-codeudor-colombia.html'
+      path: '/prestamos-sin-codeudor-colombia.html'
+      fullPath: '/prestamos-sin-codeudor-colombia.html'
+      preLoaderRoute: typeof PrestamosSinCodeudorColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/puntaje-crediticio-colombia.html': {
+      id: '/puntaje-crediticio-colombia.html'
+      path: '/puntaje-crediticio-colombia.html'
+      fullPath: '/puntaje-crediticio-colombia.html'
+      preLoaderRoute: typeof PuntajeCrediticioColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/que-es-estudio-de-credito.html': {
+      id: '/que-es-estudio-de-credito.html'
+      path: '/que-es-estudio-de-credito.html'
+      fullPath: '/que-es-estudio-de-credito.html'
+      preLoaderRoute: typeof QueEsEstudioDeCreditoDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refinanciar-reestructurar-deuda.html': {
+      id: '/refinanciar-reestructurar-deuda.html'
+      path: '/refinanciar-reestructurar-deuda.html'
+      fullPath: '/refinanciar-reestructurar-deuda.html'
+      preLoaderRoute: typeof RefinanciarReestructurarDeudaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/requisitos-credito-online-colombia.html': {
+      id: '/requisitos-credito-online-colombia.html'
+      path: '/requisitos-credito-online-colombia.html'
+      fullPath: '/requisitos-credito-online-colombia.html'
+      preLoaderRoute: typeof RequisitosCreditoOnlineColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/requisitos-credito-para-pensionados-colombia.html': {
+      id: '/requisitos-credito-para-pensionados-colombia.html'
+      path: '/requisitos-credito-para-pensionados-colombia.html'
+      fullPath: '/requisitos-credito-para-pensionados-colombia.html'
+      preLoaderRoute: typeof RequisitosCreditoParaPensionadosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/simulador-credito-colombia.html': {
+      id: '/simulador-credito-colombia.html'
+      path: '/simulador-credito-colombia.html'
+      fullPath: '/simulador-credito-colombia.html'
+      preLoaderRoute: typeof SimuladorCreditoColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/simulador-credito-como-funciona.html': {
+      id: '/simulador-credito-como-funciona.html'
+      path: '/simulador-credito-como-funciona.html'
+      fullPath: '/simulador-credito-como-funciona.html'
+      preLoaderRoute: typeof SimuladorCreditoComoFuncionaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tabla-amortizacion-credito.html': {
+      id: '/tabla-amortizacion-credito.html'
+      path: '/tabla-amortizacion-credito.html'
+      fullPath: '/tabla-amortizacion-credito.html'
+      preLoaderRoute: typeof TablaAmortizacionCreditoDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tasa-de-usura-colombia.html': {
+      id: '/tasa-de-usura-colombia.html'
+      path: '/tasa-de-usura-colombia.html'
+      fullPath: '/tasa-de-usura-colombia.html'
+      preLoaderRoute: typeof TasaDeUsuraColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tasas-interes-creditos-colombia.html': {
+      id: '/tasas-interes-creditos-colombia.html'
+      path: '/tasas-interes-creditos-colombia.html'
+      fullPath: '/tasas-interes-creditos-colombia.html'
+      preLoaderRoute: typeof TasasInteresCreditosColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tasas-interes-prestamos-online.html': {
+      id: '/tasas-interes-prestamos-online.html'
+      path: '/tasas-interes-prestamos-online.html'
+      fullPath: '/tasas-interes-prestamos-online.html'
+      preLoaderRoute: typeof TasasInteresPrestamosOnlineDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terminos.html': {
+      id: '/terminos.html'
+      path: '/terminos.html'
+      fullPath: '/terminos.html'
+      preLoaderRoute: typeof TerminosDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/verificar-empresa-prestamos-legitima.html': {
+      id: '/verificar-empresa-prestamos-legitima.html'
+      path: '/verificar-empresa-prestamos-legitima.html'
+      fullPath: '/verificar-empresa-prestamos-legitima.html'
+      preLoaderRoute: typeof VerificarEmpresaPrestamosLegitimaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/verificar-prestamista-legal-colombia.html': {
+      id: '/verificar-prestamista-legal-colombia.html'
+      path: '/verificar-prestamista-legal-colombia.html'
+      fullPath: '/verificar-prestamista-legal-colombia.html'
+      preLoaderRoute: typeof VerificarPrestamistaLegalColombiaDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/divulgacion-afiliados/': {
+      id: '/divulgacion-afiliados/'
+      path: '/divulgacion-afiliados'
+      fullPath: '/divulgacion-afiliados/'
+      preLoaderRoute: typeof DivulgacionAfiliadosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/': {
+      id: '/en/'
+      path: '/en'
+      fullPath: '/en/'
+      preLoaderRoute: typeof EnIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/$slug': {
+      id: '/en/$slug'
+      path: '/en/$slug'
+      fullPath: '/en/$slug'
+      preLoaderRoute: typeof EnSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/contact.html': {
+      id: '/en/contact.html'
+      path: '/en/contact.html'
+      fullPath: '/en/contact.html'
+      preLoaderRoute: typeof EnContactDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/loan-offers.html': {
+      id: '/en/loan-offers.html'
+      path: '/en/loan-offers.html'
+      fullPath: '/en/loan-offers.html'
+      preLoaderRoute: typeof EnLoanOffersDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/privacy-policy.html': {
+      id: '/en/privacy-policy.html'
+      path: '/en/privacy-policy.html'
+      fullPath: '/en/privacy-policy.html'
+      preLoaderRoute: typeof EnPrivacyPolicyDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/sitemap.html': {
+      id: '/en/sitemap.html'
+      path: '/en/sitemap.html'
+      fullPath: '/en/sitemap.html'
+      preLoaderRoute: typeof EnSitemapDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/terms.html': {
+      id: '/en/terms.html'
+      path: '/en/terms.html'
+      fullPath: '/en/terms.html'
+      preLoaderRoute: typeof EnTermsDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/metodologia/': {
+      id: '/metodologia/'
+      path: '/metodologia'
+      fullPath: '/metodologia/'
+      preLoaderRoute: typeof MetodologiaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-editorial/': {
+      id: '/politica-editorial/'
+      path: '/politica-editorial'
+      fullPath: '/politica-editorial/'
+      preLoaderRoute: typeof PoliticaEditorialIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamistas/': {
+      id: '/prestamistas/'
+      path: '/prestamistas'
+      fullPath: '/prestamistas/'
+      preLoaderRoute: typeof PrestamistasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamo-responsable/': {
+      id: '/prestamo-responsable/'
+      path: '/prestamo-responsable'
+      fullPath: '/prestamo-responsable/'
+      preLoaderRoute: typeof PrestamoResponsableIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/proveedores/': {
+      id: '/proveedores/'
+      path: '/proveedores'
+      fullPath: '/proveedores/'
+      preLoaderRoute: typeof ProveedoresIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre-nosotros/': {
+      id: '/sobre-nosotros/'
+      path: '/sobre-nosotros'
+      fullPath: '/sobre-nosotros/'
+      preLoaderRoute: typeof SobreNosotrosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestamistas/$slug/': {
+      id: '/prestamistas/$slug/'
+      path: '/prestamistas/$slug'
+      fullPath: '/prestamistas/$slug/'
+      preLoaderRoute: typeof PrestamistasSlugIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/proveedores/$slug/': {
+      id: '/proveedores/$slug/'
+      path: '/proveedores/$slug'
+      fullPath: '/proveedores/$slug/'
+      preLoaderRoute: typeof ProveedoresSlugIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AcuerdoPagoDeudaColombiaDothtmlRoute: AcuerdoPagoDeudaColombiaDothtmlRoute,
+  AlternativasPrestamosOnlineDothtmlRoute:
+    AlternativasPrestamosOnlineDothtmlRoute,
+  AppsPrestamosColombiaDothtmlRoute: AppsPrestamosColombiaDothtmlRoute,
+  CompraDeCarteraColombiaDothtmlRoute: CompraDeCarteraColombiaDothtmlRoute,
+  ConsultarHistorialCrediticioGratisDothtmlRoute:
+    ConsultarHistorialCrediticioGratisDothtmlRoute,
+  ContactoDothtmlRoute: ContactoDothtmlRoute,
+  CostosOcultosCreditosOnlineDothtmlRoute:
+    CostosOcultosCreditosOnlineDothtmlRoute,
+  CreditoLibranzaColombiaDothtmlRoute: CreditoLibranzaColombiaDothtmlRoute,
+  CreditoLibreInversionColombiaDothtmlRoute:
+    CreditoLibreInversionColombiaDothtmlRoute,
+  CreditoOnlineVsBancoDothtmlRoute: CreditoOnlineVsBancoDothtmlRoute,
+  CreditoPensionadosMalHistorialColombiaDothtmlRoute:
+    CreditoPensionadosMalHistorialColombiaDothtmlRoute,
+  CreditoSinCuentaBancariaColombiaDothtmlRoute:
+    CreditoSinCuentaBancariaColombiaDothtmlRoute,
+  CreditoSinHistorialCrediticioDothtmlRoute:
+    CreditoSinHistorialCrediticioDothtmlRoute,
+  CreditosOnlineColombiaDothtmlRoute: CreditosOnlineColombiaDothtmlRoute,
+  CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute:
+    CuantoCreditoPuedePedirUnPensionadoColombiaDothtmlRoute,
+  DerechosConsumidorFinancieroColombiaDothtmlRoute:
+    DerechosConsumidorFinancieroColombiaDothtmlRoute,
+  DescuentoAutomaticoPensionadosColombiaDothtmlRoute:
+    DescuentoAutomaticoPensionadosColombiaDothtmlRoute,
+  EmbargoPorDeudasColombiaDothtmlRoute: EmbargoPorDeudasColombiaDothtmlRoute,
+  EstafasPrestamosOnlineColombiaDothtmlRoute:
+    EstafasPrestamosOnlineColombiaDothtmlRoute,
+  EstudioDeCreditoColombiaDothtmlRoute: EstudioDeCreditoColombiaDothtmlRoute,
+  GotaAGotaColombiaDothtmlRoute: GotaAGotaColombiaDothtmlRoute,
+  HistorialCrediticioDatacreditoColombiaDothtmlRoute:
+    HistorialCrediticioDatacreditoColombiaDothtmlRoute,
+  InsolvenciaPersonaNaturalColombiaDothtmlRoute:
+    InsolvenciaPersonaNaturalColombiaDothtmlRoute,
+  MapaSitioDothtmlRoute: MapaSitioDothtmlRoute,
+  MicrocreditosColombiaDothtmlRoute: MicrocreditosColombiaDothtmlRoute,
+  NoPuedoPagarPrestamoQueHacerDothtmlRoute:
+    NoPuedoPagarPrestamoQueHacerDothtmlRoute,
+  OfertasCreditosDothtmlRoute: OfertasCreditosDothtmlRoute,
+  PeligrosGotaGotaColombiaDothtmlRoute: PeligrosGotaGotaColombiaDothtmlRoute,
+  PoliticaPrivacidadDothtmlRoute: PoliticaPrivacidadDothtmlRoute,
+  PrestamoReportadoDatacreditoDothtmlRoute:
+    PrestamoReportadoDatacreditoDothtmlRoute,
+  PrestamoSoloConCedulaColombiaDothtmlRoute:
+    PrestamoSoloConCedulaColombiaDothtmlRoute,
+  PrestamosBajoMontoColombiaDothtmlRoute:
+    PrestamosBajoMontoColombiaDothtmlRoute,
+  PrestamosInmediatosEnLineaDothtmlRoute:
+    PrestamosInmediatosEnLineaDothtmlRoute,
+  PrestamosParaIndependientesColombiaDothtmlRoute:
+    PrestamosParaIndependientesColombiaDothtmlRoute,
+  PrestamosParaPensionadosColombiaRoute: PrestamosParaPensionadosColombiaRoute,
+  PrestamosParaPensionadosColombiaDothtmlRoute:
+    PrestamosParaPensionadosColombiaDothtmlRoute,
+  PrestamosPequenosMontosColombiaDothtmlRoute:
+    PrestamosPequenosMontosColombiaDothtmlRoute,
+  PrestamosRapidosInmediatosColombiaDothtmlRoute:
+    PrestamosRapidosInmediatosColombiaDothtmlRoute,
+  PrestamosSinCodeudorColombiaDothtmlRoute:
+    PrestamosSinCodeudorColombiaDothtmlRoute,
+  PuntajeCrediticioColombiaDothtmlRoute: PuntajeCrediticioColombiaDothtmlRoute,
+  QueEsEstudioDeCreditoDothtmlRoute: QueEsEstudioDeCreditoDothtmlRoute,
+  RefinanciarReestructurarDeudaDothtmlRoute:
+    RefinanciarReestructurarDeudaDothtmlRoute,
+  RequisitosCreditoOnlineColombiaDothtmlRoute:
+    RequisitosCreditoOnlineColombiaDothtmlRoute,
+  RequisitosCreditoParaPensionadosColombiaDothtmlRoute:
+    RequisitosCreditoParaPensionadosColombiaDothtmlRoute,
+  SimuladorCreditoColombiaDothtmlRoute: SimuladorCreditoColombiaDothtmlRoute,
+  SimuladorCreditoComoFuncionaDothtmlRoute:
+    SimuladorCreditoComoFuncionaDothtmlRoute,
+  TablaAmortizacionCreditoDothtmlRoute: TablaAmortizacionCreditoDothtmlRoute,
+  TasaDeUsuraColombiaDothtmlRoute: TasaDeUsuraColombiaDothtmlRoute,
+  TasasInteresCreditosColombiaDothtmlRoute:
+    TasasInteresCreditosColombiaDothtmlRoute,
+  TasasInteresPrestamosOnlineDothtmlRoute:
+    TasasInteresPrestamosOnlineDothtmlRoute,
+  TerminosDothtmlRoute: TerminosDothtmlRoute,
+  VerificarEmpresaPrestamosLegitimaDothtmlRoute:
+    VerificarEmpresaPrestamosLegitimaDothtmlRoute,
+  VerificarPrestamistaLegalColombiaDothtmlRoute:
+    VerificarPrestamistaLegalColombiaDothtmlRoute,
+  EnSlugRoute: EnSlugRoute,
+  EnContactDothtmlRoute: EnContactDothtmlRoute,
+  EnLoanOffersDothtmlRoute: EnLoanOffersDothtmlRoute,
+  EnPrivacyPolicyDothtmlRoute: EnPrivacyPolicyDothtmlRoute,
+  EnSitemapDothtmlRoute: EnSitemapDothtmlRoute,
+  EnTermsDothtmlRoute: EnTermsDothtmlRoute,
+  DivulgacionAfiliadosIndexRoute: DivulgacionAfiliadosIndexRoute,
+  EnIndexRoute: EnIndexRoute,
+  MetodologiaIndexRoute: MetodologiaIndexRoute,
+  PoliticaEditorialIndexRoute: PoliticaEditorialIndexRoute,
+  PrestamistasIndexRoute: PrestamistasIndexRoute,
+  PrestamoResponsableIndexRoute: PrestamoResponsableIndexRoute,
+  ProveedoresIndexRoute: ProveedoresIndexRoute,
+  SobreNosotrosIndexRoute: SobreNosotrosIndexRoute,
+  PrestamistasSlugIndexRoute: PrestamistasSlugIndexRoute,
+  ProveedoresSlugIndexRoute: ProveedoresSlugIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

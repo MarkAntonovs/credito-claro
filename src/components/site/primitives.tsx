@@ -10,15 +10,29 @@ export function UnknownValue() {
   return <span className="text-muted-foreground italic">No disponible</span>;
 }
 
-export function DataValue({ value, className }: { value: string | null; className?: string }) {
+export function DataValue({
+  value,
+  className,
+}: {
+  value: string | null | undefined;
+  className?: string;
+}) {
   if (!value) return <UnknownValue />;
   return <span className={cn("num", className)}>{value}</span>;
 }
 
-export function LastReviewed({ date, className }: { date: string | null; className?: string }) {
+export function LastReviewed({
+  date,
+  className,
+  label = "Última verificación",
+}: {
+  date: string | null;
+  className?: string;
+  label?: string;
+}) {
   return (
     <p className={cn("text-xs text-muted-foreground", className)}>
-      Información verificada:{" "}
+      {label}:{" "}
       {date ? (
         <time dateTime={date} className="num">
           {date}
@@ -34,6 +48,8 @@ export function SourceLink({ href, children }: { href: string; children: ReactNo
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="underline decoration-border-strong underline-offset-4 transition-colors hover:decoration-accent hover:text-accent-soft-foreground"
     >
       {children}

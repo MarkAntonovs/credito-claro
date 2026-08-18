@@ -11,7 +11,10 @@ export function Faq({ items }: { items: FaqItem[] }) {
           <summary className="cursor-pointer list-none text-[0.975rem] font-medium marker:hidden">
             <span className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
               <span className="min-w-0">{item.question}</span>
-              <span aria-hidden="true" className="shrink-0 text-muted-foreground group-open:rotate-45 transition-transform">
+              <span
+                aria-hidden="true"
+                className="shrink-0 text-muted-foreground group-open:rotate-45 transition-transform"
+              >
                 +
               </span>
             </span>
